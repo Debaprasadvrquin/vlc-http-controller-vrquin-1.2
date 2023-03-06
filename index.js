@@ -13,6 +13,8 @@ var m = 0;
 var bri = 5;
 var vlc;
 const temperatures = [];
+
+const introduction = "/home/pi/vlc-http-controller-vrquin/videos/111.mp4"
 /* LISTENING PARAMETERS */
 // const length = fs.readdirSync("/videos").length
 vlc = spawn('vlc', ['-I', 'rc', '--rc-fake-tty']);
@@ -94,17 +96,17 @@ app.post("/load", async (req, res) => {
     const { fileid } = req.body;
     await findMedia(fileid)
         .then((file) => {
-            // vlc.stdin.write("clear\n");
-            // vlc.stdin.write('add ' + file['src'] + '\n')
+            vlc.stdin.write("clear\n");
+            vlc.stdin.write('add ' + file['src'] + '\n')
             // vlc.stdin.write('enqueue' + file['src'] + '\n')
             // vlc.stdin.write('goto 5\n')
-            vlc.stdin.write('goto ' + file['p_list'] + '\n')
+            // vlc.stdin.write('goto ' + file['p_list'] + '\n')
             // vlc.stdin.write("playlist\n")
             // vlc.stdin.write("play\n");
             res.send({ status: "OK" })
         })
 });
-vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin/videos/' + '\n')
+vlc.stdin.write('add ' + introduction + '\n')
 vlc.stdin.write("loop\n")
 // vlc.stdin.write("repeat\n")
 app.post("/seek", async (req, res) => {
