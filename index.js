@@ -66,6 +66,16 @@ app.get("/holotube3.72.html", (req, res) => {
 app.get("/instructions.html", (req, res) => {
     res.sendFile(__dirname + '/public/html/instructions.html');
 });
+
+app.get("/BeoPlayH6fromDimensivaXR.45.html", (req, res) => {
+    res.sendFile(__dirname + '/public/html/BeoPlay H6 from Dimensiva XR.45.html');
+});
+app.get("/BeoPlayH6fromDimensivaXR.46.html", (req, res) => {
+    res.sendFile(__dirname + '/public/html/BeoPlay H6 from Dimensiva XR.46.html');
+});
+app.get("/BeoPlayH6fromDimensiva.43.html", (req, res) => {
+    res.sendFile(__dirname + '/public/html/BeoPlay H6 from Dimensiva.43.html');
+});
 async function findMedia(id) {
     return new Promise((resolve, reject) => {
         const found = media.filter((v) => {
