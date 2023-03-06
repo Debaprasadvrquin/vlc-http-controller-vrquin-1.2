@@ -27,9 +27,9 @@ Each media object requires a unique ID, a title (to be displayed) and the path o
 
 Run 
 
-    git clone https://github.com/Debaprasadvrquin/vlc-http-controller-vrquin-1.0.git
+    git clone https://github.com/Debaprasadvrquin/vlc-http-controller-vrquin-1.1.git
 
-    cd vlc-http-controller-vrquin-1.0
+    cd vlc-http-controller-vrquin-1.1
 
     npm install express
     
