@@ -27,6 +27,14 @@ Each media object requires a unique ID, a title (to be displayed) and the path o
 
 Run 
 
+    git clone https://github.com/Debaprasadvrquin/vlc-http-controller-vrquin.git
+
+    cd vlc-http-controller-vrquin
+
+    npm install express
+    
+    sudo pip install screen-brightness-control
+
     node index.js
 
 Then visit:
