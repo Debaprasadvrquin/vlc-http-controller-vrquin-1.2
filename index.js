@@ -14,7 +14,7 @@ var bri = 5;
 var vlc;
 const temperatures = [];
 
-const introduction = "/home/pi/vlc-http-controller-vrquin/videos/111.mp4"
+const introduction = "/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4"
 /* LISTENING PARAMETERS */
 // const length = fs.readdirSync("/videos").length
 vlc = spawn('vlc', ['-I', 'rc', '--rc-fake-tty']);
