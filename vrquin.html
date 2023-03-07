@@ -15,9 +15,19 @@
     <link rel="icon" sizes="192x192" href="/images/vrquin-128.png">
     <link rel="manifest" href="manifest.json">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style>
+        .prevent-select {
+            -webkit-user-select: none;
+            /* Safari */
+            -ms-user-select: none;
+            /* IE 10 and IE 11 */
+            user-select: none;
+            /* Standard syntax */
+        }
+    </style>
 </head>
 
-<body style="background-color: rgb(255, 255, 255);overflow: hidden; ">
+<body class="prevent-select" style="background-color: rgb(255, 255, 255);overflow: hidden; ">
     <!-- <div class="vrc0"> -->
     <!-- <div class="media"> -->
     <!-- <div class="head-btn"> -->
