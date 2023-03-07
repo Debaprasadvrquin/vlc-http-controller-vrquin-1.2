@@ -6,7 +6,7 @@
             "video_n": "111.mp4",
             "p_list": 4,
             "img_p": "/thumbnails/111.jpg",
-            "src": "/home/pi/vlc-http-controller-vrquin/videos/111.mp4"
+            "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4"
         },
         {
             "id": 2,
@@ -14,7 +14,7 @@
             "video_n": "113.mp4",
             "p_list": 5,
             "img_p": "/thumbnails/113.jpg",
-            "src": "/home/pi/vlc-http-controller-vrquin/videos/113.mp4"
+            "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/113.mp4"
         },
         {
             "id": 3,
@@ -22,7 +22,7 @@
             "video_n": "115.mp4",
             "p_list": 6,
             "img_p": "/thumbnails/115.jpg",
-            "src": "/home/pi/vlc-http-controller-vrquin/videos/115.mp4"
+            "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/115.mp4"
         },
         {
             "id": 4,
@@ -30,7 +30,7 @@
             "video_n": "116.mp4",
             "p_list": 7,
             "img_p": "/thumbnails/116.jpg",
-            "src": "/home/pi/vlc-http-controller-vrquin/videos/116.mp4"
+            "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/116.mp4"
         },
         {
             "id": 5,
@@ -38,7 +38,7 @@
             "video_n": "Angel.mp4",
             "p_list": 8,
             "img_p": "/thumbnails/Angel.jpg",
-            "src": "/home/pi/vlc-http-controller-vrquin/videos/Angel.mp4"
+            "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/Angel.mp4"
         },
         {
             "id": 6,
@@ -46,7 +46,7 @@
             "video_n": "camear.mp4",
             "p_list": 9,
             "img_p": "/thumbnails/camear.jpg",
-            "src": "/home/pi/vlc-http-controller-vrquin/videos/camear.mp4"
+            "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/camear.mp4"
         },
         {
             "id": 7,
@@ -54,7 +54,7 @@
             "video_n": "capricorn.mp4",
             "p_list": 10,
             "img_p": "/thumbnails/capricorn.jpg",
-            "src": "/home/pi/vlc-http-controller-vrquin/videos/capricorn.mp4"
+            "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/capricorn.mp4"
         }
     ]
 }
