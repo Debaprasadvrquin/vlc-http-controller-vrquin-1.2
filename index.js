@@ -98,6 +98,10 @@ app.post("/load", async (req, res) => {
         .then((file) => {
             vlc.stdin.write("clear\n");
             vlc.stdin.write('add ' + file['src'] + '\n')
+            setTimeout(() => {
+                vlc.stdin.write("clear\n");
+                vlc.stdin.write('add ' + introduction + '\n')
+            }, 10000)
             // vlc.stdin.write('enqueue' + file['src'] + '\n')
             // vlc.stdin.write('goto 5\n')
             // vlc.stdin.write('goto ' + file['p_list'] + '\n')
