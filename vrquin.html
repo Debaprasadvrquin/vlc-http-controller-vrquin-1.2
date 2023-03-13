@@ -47,9 +47,9 @@
         <img src="/images/vrquin-64.png" alt="" class="my-logo">
         <div class="loadiframe">
             <h3>Available Colours</h3>
-            <button id="b1" class="box black" data-src="BeoPlayH6fromDimensivaXR.46.html"></button>
-            <button id="b2" class="box brown"data-src="BeoPlayH6fromDimensiva.43.html"></button>
-            <button id="b3" class="box silver"data-src="BeoPlayH6fromDimensivaXR.45.html"></button>
+            <button id="black_button1" class="box black" data-src="BeoPlayH6fromDimensivaXR.46.html"></button>
+            <button id="yellow_button1" class="box brown" data-src="BeoPlayH6fromDimensiva.43.html"></button>
+            <button id="white_button1" class="box silver" data-src="BeoPlayH6fromDimensivaXR.45.html"></button>
         </div>
     </div>
 
@@ -63,17 +63,22 @@
             <div class="item-desc-1">
                 <div class="item-year-1">
                     <h3>About this item</h3>
-                    <p> <ul>
-                        <li>Tap into instant wireless connectivity with the latest Bluetooth V5.0. Yes, Rockerz 550 on-ear headphones have IPX5 dust and water resistance making it perfect for sports and adventures.</li>
-                        <li>Its 50mm dynamic drivers help pump out immersive audio all day long, Charging Time 2.5 hours, Frequency Response - 20Hz-20KHz</li>
+                    <p>
+                    <ul>
+                        <li>Tap into instant wireless connectivity with the latest Bluetooth V5.0. Yes, Rockerz 550
+                            on-ear headphones have IPX5 dust and water resistance making it perfect for sports and
+                            adventures.</li>
+                        <li>Its 50mm dynamic drivers help pump out immersive audio all day long, Charging Time 2.5
+                            hours, Frequency Response - 20Hz-20KHz</li>
                         <li>The mighty 500mAh battery capacity offers a superior playback time of up to 20 Hours
-                           </li>
-                            <li> It has been ergonomically designed and structured as an over-ear headphone to provide the best user experience</li>
-                           
-                    </ul> 
-                        
-                        
-                        </p>
+                        </li>
+                        <li> It has been ergonomically designed and structured as an over-ear headphone to provide the
+                            best user experience</li>
+
+                    </ul>
+
+
+                    </p>
                 </div>
                 <div class="prd-info">
                     <div class="row">
@@ -298,7 +303,20 @@
                 }
             })
         }
+        const black_button1 = d3.select("#black_button1");
+        black_button1.on("click", function () {
+            callVLC("black_button1", {})
+        })
 
+        const yellow_button1 = d3.select("#yellow_button1");
+        yellow_button1.on("click", function () {
+            callVLC("yellow_button1", {})
+        })
+
+        const white_button1 = d3.select("#white_button1");
+        white_button1.on("click", function () {
+            callVLC("white_button1", {})
+        })
         // const panel = d3.select("#panel");
         // const panel1 = d3.select("#panel1");
         // const panel2 = d3.select("#panel2");
