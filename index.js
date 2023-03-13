@@ -45,6 +45,19 @@ vlc.stderr.on('data', (data) => {
 app.get("/library", (req, res) => {
     res.sendFile(__dirname + '/library.json');
 });
+app.get("/library1", (req, res) => {
+    res.sendFile(__dirname + '/public/json/library1.json');
+});
+app.get("/library2", (req, res) => {
+    res.sendFile(__dirname + '/public/json/library2.json');
+});
+app.get("/library3", (req, res) => {
+    res.sendFile(__dirname + '/public/json/library3.json');
+});
+app.get("/library4", (req, res) => {
+    res.sendFile(__dirname + '/public/json/library4.json');
+});
+
 app.get("/manifest", (req, res) => {
     res.sendFile(__dirname + '/public/json/manifest.json');
 });
@@ -56,6 +69,18 @@ app.get("/vrquin-128", (req, res) => {
 });
 app.get("/", (req, res) => {
     res.sendFile(__dirname + '/vrquin.html');
+});
+app.get("/vrquin1", (req, res) => {
+    res.sendFile(__dirname + '/public/html/vrquin1.html');
+});
+app.get("/vrquin2", (req, res) => {
+    res.sendFile(__dirname + '/public/html/vrquin2.html');
+});
+app.get("/vrquin3", (req, res) => {
+    res.sendFile(__dirname + '/public/html/vrquin3.html');
+});
+app.get("/vrquin4", (req, res) => {
+    res.sendFile(__dirname + '/public/html/vrquin4.html');
 });
 
 app.get("/rc", (req, res) => {
@@ -98,21 +123,148 @@ app.post("/load", async (req, res) => {
         .then((file) => {
             vlc.stdin.write("clear\n");
             vlc.stdin.write('add ' + file['src'] + '\n')
-            setTimeout(() => {
-                vlc.stdin.write("clear\n");
-                vlc.stdin.write('add ' + introduction + '\n')
-            }, 30000)
-            // vlc.stdin.write('enqueue' + file['src'] + '\n')
-            // vlc.stdin.write('goto 5\n')
-            // vlc.stdin.write('goto ' + file['p_list'] + '\n')
-            // vlc.stdin.write("playlist\n")
-            // vlc.stdin.write("play\n");
+            var id_No = file['id']
+            var length = file['Length']
+            if (id_No < 8) {
+                setTimeout(() => {
+                    vlc.stdin.write("clear\n");
+                    vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+                }, length)
+            } else if ((id_No > 7) & (id_No > 15)) {
+                setTimeout(() => {
+                    vlc.stdin.write("clear\n");
+                    vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+                }, length)
+            } else if ((id_No > 14) & (id_No < 22)) {
+                setTimeout(() => {
+                    vlc.stdin.write("clear\n");
+                    vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+                }, length)
+            } else if ((id_No > 21) & (id_No < 28)) {
+                setTimeout(() => {
+                    vlc.stdin.write("clear\n");
+                    vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+                }, length)
+            }
             res.send({ status: "OK" })
         })
 });
 vlc.stdin.write('add ' + introduction + '\n')
 vlc.stdin.write("loop\n")
-// vlc.stdin.write("repeat\n")
+
+
+app.post("/black_button1", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.1/videos/116.mp4" + '\n')
+    setTimeout(() => {
+        vlc.stdin.write("clear\n");
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+    }, 19000)
+    res.send({ status: "OK" })
+});
+app.post("/yellow_button1", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.1/videos/113.mp4" + '\n')
+    setTimeout(() => {
+        vlc.stdin.write("clear\n");
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+    }, 33000)
+    res.send({ status: "OK" })
+});
+app.post("/white_button1", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.1/videos/115.mp4" + '\n')
+    setTimeout(() => {
+        vlc.stdin.write("clear\n");
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+    }, 29000)
+    res.send({ status: "OK" })
+});
+
+app.post("/black_button2", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.1/videos/116.mp4" + '\n')
+    setTimeout(() => {
+        vlc.stdin.write("clear\n");
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+    }, 19000)
+    res.send({ status: "OK" })
+});
+app.post("/yellow_button2", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.1/videos/113.mp4" + '\n')
+    setTimeout(() => {
+        vlc.stdin.write("clear\n");
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+    }, 33000)
+    res.send({ status: "OK" })
+});
+app.post("/white_button2", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.1/videos/115.mp4" + '\n')
+    setTimeout(() => {
+        vlc.stdin.write("clear\n");
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+    }, 29000)
+    res.send({ status: "OK" })
+});
+
+app.post("/black_button3", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.1/videos/116.mp4" + '\n')
+    setTimeout(() => {
+        vlc.stdin.write("clear\n");
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+    }, 19000)
+    res.send({ status: "OK" })
+});
+app.post("/yellow_button3", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.1/videos/113.mp4" + '\n')
+    setTimeout(() => {
+        vlc.stdin.write("clear\n");
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+    }, 33000)
+    res.send({ status: "OK" })
+});
+app.post("/white_button3", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.1/videos/115.mp4" + '\n')
+    setTimeout(() => {
+        vlc.stdin.write("clear\n");
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+    }, 29000)
+    res.send({ status: "OK" })
+});
+
+app.post("/black_button4", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.1/videos/116.mp4" + '\n')
+    setTimeout(() => {
+        vlc.stdin.write("clear\n");
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+    }, 19000)
+    res.send({ status: "OK" })
+});
+app.post("/yellow_button4", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.1/videos/113.mp4" + '\n')
+    setTimeout(() => {
+        vlc.stdin.write("clear\n");
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+    }, 33000)
+    res.send({ status: "OK" })
+});
+app.post("/white_button4", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.1/videos/115.mp4" + '\n')
+    setTimeout(() => {
+        vlc.stdin.write("clear\n");
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4' + '\n')
+    }, 29000)
+    res.send({ status: "OK" })
+});
+
 app.post("/seek", async (req, res) => {
     const { time } = req.body;
     console.log("SEEK", time)
