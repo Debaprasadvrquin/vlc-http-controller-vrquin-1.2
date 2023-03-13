@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(209, 209, 209);">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- <meta name="viewport" content="remote controller" , initial-scale=1.0"> -->
+    <meta name="viewport" content="user-scalable=no">
+    <title>VRQUIN</title>
+    <link rel="manifest" href="manifest">
+    <link rel="stylesheet" href="css/vrquin.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"> -->
+    <link rel="apple-touch-icon" sizes="128x128" href="/images/vrquin-64.png">
+    <link rel="icon" sizes="192x192" href="/images/vrquin-128.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style>
+        .prevent-select {
+            -webkit-user-select: none;
+            /* Safari */
+            -ms-user-select: none;
+            /* IE 10 and IE 11 */
+            user-select: none;
+            /* Standard syntax */
+        }
+    </style>
+</head>
+
+<body class="prevent-select" style="background-color: rgb(255, 255, 255);overflow: hidden; ">
+    <!-- <div class="vrc0"> -->
+    <!-- <div class="media"> -->
+    <!-- <div class="head-btn"> -->
+    <!-- <div id="panelshutdown" class="button-r" style="margin-left: 90px;"><i class="fa fa-power-off"
+                        aria-hidden="true" style='color: red'></i></div> -->
+    <!-- <div id="library" class="button-rp"
+                    style="margin-left: 140px;margin-top :200px;font-weight:400;font-size: 60px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                </div> -->
+
+    <!-- <div id="panelreboot" class="button-r" style="margin-left: 455px;"><i class="fa fa-refresh"
+                        aria-hidden="true" style='color: green'></i></div> -->
+    <!-- </div> -->
+    <!-- <div class="contents"> View Angles </div> -->
+
+    <div class="top-nav">
+        <img src="/images/vrquin-641.png" alt="" class="client-logo">
+        <img src="/images/vrquin-64.png" alt="" class="my-logo">
+        <div class="loadiframe">
+            <h3>Available Colours</h3>
+            <button id="black_button4" class="box black" data-src="BeoPlayH6fromDimensivaXR.46.html"></button>
+            <button id="yellow_button4" class="box brown" data-src="BeoPlayH6fromDimensiva.43.html"></button>
+            <button id="white_button4" class="box silver" data-src="BeoPlayH6fromDimensivaXR.45.html"></button>
+        </div>
+    </div>
+
+    <div class="aside">
+        <div id="library" class="scroll">
+
+            <!-- <div id="library" class="scroll" style="margin-left: 155px;"> -->
+        </div>
+
+        <div class="col-sm-6">
+            <div class="item-desc-1">
+                <div class="item-year-1">
+                    <h3>About this item</h3>
+                    <p>
+                    <ul>
+                        <li>Tap into instant wireless connectivity with the latest Bluetooth V5.0. Yes, Rockerz 550
+                            on-ear headphones have IPX5 dust and water resistance making it perfect for sports and
+                            adventures.</li>
+                        <li>Its 50mm dynamic drivers help pump out immersive audio all day long, Charging Time 2.5
+                            hours, Frequency Response - 20Hz-20KHz</li>
+                        <li>The mighty 500mAh battery capacity offers a superior playback time of up to 20 Hours
+                        </li>
+                        <li> It has been ergonomically designed and structured as an over-ear headphone to provide the
+                            best user experience</li>
+
+                    </ul>
+
+
+                    </p>
+                </div>
+                <div class="prd-info">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="prd-head">
+                                <div class="type"><span>Size</span></div>
+                                <div class="ms">
+                                    <div class="column">
+                                        <div class="width">
+                                            <h4>Width</h4>
+                                            <ul>
+                                                <li>120 - 139 cm</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="height">
+                                            <h4>Height</h4>
+                                            <ul>
+                                                <li>65 - 69 cm</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="depth">
+                                            <h4>Depth</h4>
+                                            <ul>
+                                                <li>70 - 79 cm</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="prd-location">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="type"><span>Availble Locations</span></div>
+                                    </div>
+                                </div>
+                                <ul class="locations">
+                                    <div>
+                                        <li class="col-xs-4">Bhubaneswar</li>
+                                        <li class="col-xs-4">kolkata</li>
+                                        <li class="col-xs-4">Bangalore</li>
+                                    </div>
+                                    <div>
+                                        <li class="col-xs-4">Singapore</li>
+                                        <li class="col-xs-4">Los Angeles</li>
+                                    </div>
+
+                                </ul>
+                                <div class="scroll" style="margin-top:-10px; margin-left: 140px;">
+                                    <button onclick="openForm()">View more</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="view-360">
+        <img src="/images/360.png" alt="">
+    </div>
+    <div id="popupForm" class="popupForm">
+        <div id="closeForm" class="closeForm" onclick="closeForm()">X</div>
+        <img src="/images/vrquin.png" alt="scan" class="scan">
+    </div>
+    <!-- <div class="footer">
+        <p style="padding-top:0px;">© 2022,<a class="text-dark" href="https://vrquin.com" style="color: #fff !important;">
+            VRQUIN</a></p>
+    </div> -->
+    <!-- <div class="c-content" style="overflow: hidden;" onclick="closeForm()">
+        <div class="c-body" style="overflow: hidden;">
+            <iframe id="frame" src="holotube3.72.html" allowfullscreen style=" " frameborder="0" scrolling="no">
+            </iframe>
+        </div>
+    </div> -->
+    <div class="c-content" style="overflow: hidden;" onclick="closeForm()">
+        <div class="c-body" style="overflow: hidden;">
+            <iframe id="frame" src="BeoPlayH6fromDimensivaXR.45.html" allowfullscreen style=" " frameborder="0"
+                scrolling="no">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- <div class="vrc3"> -->
+    <!-- <div id="panel1" class="button-r" style="margin-bottom: 50px;margin-top: -15px;"><i
+                            class='fa fa-volume-up'></i></div> -->
+    <!-- <div id="panelplaylist4" class="button-ro"
+                    style="margin-left: 175px;margin-top: 10px;margin-bottom: 30px;">
+                    <i class="fa fa-forward" aria-hidden="true"></i>
+                </div>
+                <div class="vrc4">
+                    <div id="panelplaylist1" class="button-ro" style=""><i class='fa fa-chevron-left fa-3x'></i></div> -->
+
+    <!-- <div id="panelplaylist3" class="button-rx"><i class="fa fa-play" aria-hidden="true"></i><i
+                            class="fa fa-pause" aria-hidden="true"></i></div> -->
+    <!-- <div id="panelplaylist2" class="button-r"><i class='fa-angles-left'></i></div> -->
+    <!-- <div id="panelplaylist31" class="button-rx"><i class="fa fa-play" aria-hidden="true"></i></div>
+
+                    <div id="panelplaylist32" class="button-rx"><i class="fa fa-pause" aria-hidden="true"></i></div> -->
+    <!-- <div id="panelplaylist4" class="button-r"><i class='fa-solid fa-angles-left'></i></div> -->
+    <!-- <div id="panelplaylist5" class="button-ro" style="margin-top: 40px;"><i
+                            class='fa fa-chevron-right'></i>
+                    </div>
+                </div>
+                <div id="panelplaylist2" class="button-ro" style="margin-left: 175px;margin-top: 25px;"><i
+                        class="fa fa-backward" aria-hidden="true"></i></div> -->
+
+    <!-- <div id="panel4" class="button-r"><i class='fa fa-volume-down'></i></div> -->
+    <!-- </div>
+            <div class="lower">
+                <div class="volume">
+                    <div id="panel1" class="volume1"><i class='fa fa-volume-up'></i></div>
+                    <div id="panel4" class="volume2"><i class='fa fa-volume-down'></i></div>
+                </div>
+                <div class="brightness">
+                    <div id="panel6" class="button1"><i class="fa fa-sun-o"></i></div>
+                    <div id="panel5" class="button2"><i class="fa fa-sun-o"></i></div>
+                </div>
+            </div>
+            <div id="panel7" class="button-r" style="margin-left: 390px;margin-top: -400px;"><i
+                    class='fa fa-volume-off'></i></div> -->
+    <!-- <div id="playlist" class="button-r1" style="margin-left: 25px;"></div> -->
+    <!-- <div id="videos"></div>
+
+        </div>
+    </div> -->
+
+    <script>function iframeChange() {
+            var buttons = document.querySelector(".loadiframe"),
+                iframe = document.getElementById('frame');
+
+            buttons.addEventListener("click", function (e) {
+                iframe.src = e.target.dataset.src;
+                iframe.width = e.target.dataset.width;
+                iframe.height = e.target.dataset.height;
+            });
+        }
+        window.onload = iframeChange;</script>
+    <script>
+        function openForm() {
+            document.getElementById("popupForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("popupForm").style.display = "none";
+        }
+    </script>
+
+    <script type="text/javascript" src="/js/vrquin.js"></script>
+    <!-- <script type="text/javascript" src="https://d3js.org/d3.v6.min.js"></script> -->
+    <script>
+        const library = d3.select("#library").append('div')
+        function loadClips(clips) {
+            console.log("LOAD", clips)
+            d3.select("#clips").selectAll("*").remove();
+            const overview = d3.select("#clips").append("table");
+            for (let clip of clips) {
+                const clipline = overview.append("tr")
+                clipline.append("td").text(clip.seconds_start)
+                    .on("click", function () {
+                        callVLC("seek", { time: clip.seconds_start })
+                    })
+                clipline.append("td").text(clip.description)
+            }
+        }
+
+        d3.json("/library4", {
+            method: "GET"
+        }).then(function (data) {
+            const files = data.media;
+            for (let file of files) {
+                const m = library;
+                // m.append("span").text(file.title)
+                // m.append('div').text(file.title).on("click", function () {
+                //     callVLC("load", { fileid: file.id })
+                // })
+
+                // if (file.video_n.endsWith(".mp4")) {
+                //     m.append('img').attr('src', file.img_p).on("click", function () {
+                //         callVLC("load", { fileid: file.id })
+                //     })
+                // } else {
+                //     m.append('div').text(file.title).on("click", function () {
+                //         callVLC("load", { fileid: file.id })
+                //     })
+                // }
+
+                m.append('button').text(file.title).on("click", function () {
+                    callVLC("load", { fileid: file.id })
+                })
+            }
+        })
+        function showPlaylist(data) {
+            console.log("BANG")
+            d3.select("#playlist").selectAll("*").remove();
+            const playlist = d3.select("#playlist").append("div")
+            let start = false;
+            for (let line of data.data) {
+                if (line == "| 2 - Media Library") {
+                    break;
+                } else if (start) {
+                    playlist.append("p").text(line)
+                } else if (line == "| 1 - Playlist") {
+                    start = true;
+                }
+            }
+        }
+        function callVLC(endpoint, data, cb) {
+            d3.json("/" + endpoint, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            }).then(function (params) {
+                console.log(params);
+                if (cb) {
+                    cb(params)
+                }
+            })
+        }
+        const black_button4 = d3.select("#black_button4");
+        black_button4.on("click", function () {
+            callVLC("black_button4", {})
+        })
+
+        const yellow_button4 = d3.select("#yellow_button4");
+        yellow_button4.on("click", function () {
+            callVLC("yellow_button4", {})
+        })
+
+        const white_button4 = d3.select("#white_button4");
+        white_button4.on("click", function () {
+            callVLC("white_button4", {})
+        })
+        // const panel = d3.select("#panel");
+        // const panel1 = d3.select("#panel1");
+        // const panel2 = d3.select("#panel2");
+        // const panel3 = d3.select("#panel3");
+        // const panel4 = d3.select("#panel4");
+        // const panel5 = d3.select("#panel5");
+        // const panel6 = d3.select("#panel6");
+        // const panel7 = d3.select("#panel7");
+        // const panel8 = d3.select("#panel8");
+        // const panel9 = d3.select("#panel9");
+        // const panel10 = d3.select("#panel10");
+        // const panel11 = d3.select("#panel11");
+        // const panel12 = d3.select("#panel12");
+        // const panel13 = d3.select("#panel13");
+        // const panel14 = d3.select("#panel14");
+        // const panel15 = d3.select("#panel15");
+        // const playlist = d3.select("#playlist");
+        // const panelplaylist1 = d3.select("#panelplaylist1")
+        // const panelplaylist2 = d3.select("#panelplaylist2")
+        // const panelplaylist3 = d3.select("#panelplaylist3")
+        // const panelplaylist31 = d3.select("#panelplaylist31")
+        // const panelplaylist32 = d3.select("#panelplaylist32")
+        // const panelplaylist4 = d3.select("#panelplaylist4")
+        // const panelplaylist5 = d3.select("#panelplaylist5")
+        // const panelreboot = d3.select("#panelreboot")
+        // const panelshutdown = d3.select("#panelshutdown")
+
+
+
+
+        // panel10.on("click", function () {
+        //     callVLC("load110", {})
+        // })
+        // panel11.on("click", function () {
+        //     callVLC("load111", {})
+        // })
+        // panel12.on("click", function () {
+        //     callVLC("load112", {})
+        // })
+        // panel13.on("click", function () {
+        //     callVLC("load113", {})
+        // })
+        // panel14.on("click", function () {
+        //     callVLC("load114", {})
+        // })
+        // panel15.on("click", function () {
+        //     callVLC("load115", {})
+        // })
+        // panel7.on("click", function () {
+        //     callVLC("mute", {})
+        // })
+        // panel8.append("button").text("Loop").on("click", function () {
+        //     callVLC("loop", {})
+        // })
+        // panel6.on("click", function () {
+        //     callVLC("brip", {})
+        // })
+        // panel5.on("click", function () {
+        //     callVLC("brim", {})
+        // })
+        // panel4.on("click", function () {
+        //     callVLC("volm", {})
+        // })
+        // panel1.on("click", function () {
+        //     callVLC("volp", {})
+        // })
+        // panel3.append("button").text("Gettime").on("click", function () {
+        //     callVLC("gettime", {})
+        // })
+
+        // panel3.append("button").text("help").on("click", function () {
+        //     callVLC("help", {})
+        // })
+
+        // panel3.append("button").text("getlength").on("click", function () {
+        //     callVLC("getlength", {})
+        // })
+
+        // panel3.append("button").text("gettimeline").on("click", function () {
+        //     callVLC("gettimeline", {})
+        // })
+
+        // playlist.append("button").text("getplaylist").on("click", function () {
+        //     callVLC("getplaylist", {}, showPlaylist)
+        // })
+
+        // panel.append("button").text("INFO").on("click", function () {
+        //     callVLC("info", {})
+        // })
+
+        // panel.append("button").text("Jump back").on("click", function () {
+        //     callVLC("rewind", {})
+        // })
+
+        // panel.append("button").text("Play").on("click", function () {
+        //     callVLC("play", {})
+        // })
+
+        // panel.append("button").text("Play/Pause").on("click", function () {
+        //     callVLC("pause", {})
+        // })
+
+        // panel.append("button").text("Jump forward").on("click", function () {
+        //     callVLC("fastforward", {})
+        // })
+
+        // panel2.append("button").text("normal").on("click", function () {
+        //     callVLC("normal", {})
+        // })
+
+        // panel2.append("button").text("slower").on("click", function () {
+        //     callVLC("slower", {})
+        // })
+
+        // panel2.append("button").text("faster").on("click", function () {
+        //     callVLC("faster", {})
+        // })
+
+        // panel2.append("button").text("Next frame").on("click", function () {
+        //     callVLC("frame", {})
+        // })
+
+        // panel3.append("button").text("Clear playlist").on("click", function () {
+        //     callVLC("clear", {})
+        // })
+        // panelplaylist1.on("click", function () {
+        //     callVLC("prev", {})
+        // })
+        // panelplaylist2.on("click", function () {
+        //     callVLC("rewind", {})
+        // })
+        // panelplaylist3.on("click", function () {
+        //     callVLC("pause", {})
+        // })
+        // panelplaylist31.on("click", function () {
+        //     callVLC("pause", {})
+        // })
+        // panelplaylist32.on("click", function () {
+        //     callVLC("pause", {})
+        // })
+        // panelplaylist4.on("click", function () {
+        //     callVLC("fastforward", {})
+        // })
+        // panelplaylist5.on("click", function () {
+        //     callVLC("next", {})
+        // })
+        // panel.append("button").text("Fullscreen").on("click", function () {
+        //     callVLC("fullscreen", {})
+        // })
+
+        // panel.append("button").text("STOP").on("click", function () {
+        //     callVLC("stop", {})
+        // })
+        // panelreboot.on("click", function () {
+        //     callVLC("reboot", {})
+        // })
+        // panelshutdown.on("click", function () {
+        //     callVLC("shutdown", {})
+        // })
+    </script>
+    <!-- <script>
+        const targetDiv1 = document.getElementById("panelplaylist31");
+        const targetDiv2 = document.getElementById("panelplaylist32");
+        targetDiv1.style.display = "none";
+        targetDiv1.onclick = function () {
+            if (targetDiv1.style.display != "none") {
+                targetDiv1.style.display = "none";
+                targetDiv2.style.display = "block";
+            }
+        }
+        targetDiv2.onclick = function () {
+            if (targetDiv2.style.display != "none") {
+                targetDiv2.style.display = "none";
+                targetDiv1.style.display = "block";
+            }
+        }
+    </script> -->
+</body>
+
+</html>
