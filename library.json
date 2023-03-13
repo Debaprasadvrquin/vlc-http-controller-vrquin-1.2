@@ -3,57 +3,50 @@
         {
             "id": 1,
             "title": "Introduction",
-            "video_n": "111.mp4",
-            "p_list": 4,
             "img_p": "/thumbnails/111.jpg",
+            "Length": 24000,
             "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/111.mp4"
         },
         {
             "id": 2,
             "title": "Front View",
             "video_n": "113.mp4",
-            "p_list": 5,
-            "img_p": "/thumbnails/113.jpg",
+            "Length": 33000,
             "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/113.mp4"
         },
         {
             "id": 3,
             "title": "Left view",
             "video_n": "115.mp4",
-            "p_list": 6,
-            "img_p": "/thumbnails/115.jpg",
+            "Length": 29000,
             "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/115.mp4"
         },
         {
             "id": 4,
             "title": "Right View",
             "video_n": "116.mp4",
-            "p_list": 7,
-            "img_p": "/thumbnails/116.jpg",
+            "Length": 19000,
             "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/116.mp4"
         },
         {
             "id": 5,
             "title": "Back View",
             "video_n": "Angel.mp4",
-            "p_list": 8,
-            "img_p": "/thumbnails/Angel.jpg",
+            "Length": 20000,
             "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/Angel.mp4"
         },
         {
             "id": 6,
             "title": "Corner View",
             "video_n": "camear.mp4",
-            "p_list": 9,
-            "img_p": "/thumbnails/camear.jpg",
+            "Length": 17000,
             "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/camear.mp4"
         },
         {
             "id": 7,
             "title": "Features",
             "video_n": "capricorn.mp4",
-            "p_list": 10,
-            "img_p": "/thumbnails/capricorn.jpg",
+            "Length": 10000,
             "src": "/home/pi/vlc-http-controller-vrquin-1.1/videos/capricorn.mp4"
         }
     ]
