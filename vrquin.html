@@ -45,20 +45,25 @@
     <div class="top-nav">
         <img src="/images/vrquin-641.png" alt="" class="client-logo">
         <img src="/images/vrquin-64.png" alt="" class="my-logo">
+
         <div class="loadiframe">
             <h3>Available Colours</h3>
             <button id="black_button1" class="box black" data-src="BeoPlayH6fromDimensivaXR.46.html"></button>
             <button id="yellow_button1" class="box brown" data-src="BeoPlayH6fromDimensiva.43.html"></button>
             <button id="white_button1" class="box silver" data-src="BeoPlayH6fromDimensivaXR.45.html"></button>
         </div>
+        <a href="/vrquin4">
+            <div id="button4" class="next"><i class='fa fa-chevron-left'></i></div>
+        </a>
+        <a href="/vrquin2">
+            <div id="button2" class="next"><i class='fa fa-chevron-right'></i></div>
+        </a>
     </div>
 
     <div class="aside">
         <div id="library" class="scroll">
-
             <!-- <div id="library" class="scroll" style="margin-left: 155px;"> -->
         </div>
-
         <div class="col-sm-6">
             <div class="item-desc-1">
                 <div class="item-year-1">
@@ -160,8 +165,7 @@
     </div> -->
     <div class="c-content" style="overflow: hidden;" onclick="closeForm()">
         <div class="c-body" style="overflow: hidden;">
-            <iframe id="frame" src="BeoPlayH6fromDimensivaXR.45.html" allowfullscreen style=" " frameborder="0"
-                scrolling="no">
+            <iframe id="frame" src="BeoPlayH6fromDimensivaXR.45.html" allowfullscreen frameborder="0" scrolling="no">
             </iframe>
         </div>
     </div>
@@ -316,6 +320,22 @@
         const white_button1 = d3.select("#white_button1");
         white_button1.on("click", function () {
             callVLC("white_button1", {})
+        })
+        const button1 = d3.select("#button1");
+        button1.on("click", function () {
+            callVLC("button1", {})
+        })
+        const button2 = d3.select("#button2");
+        button2.on("click", function () {
+            callVLC("button2", {})
+        })
+        const button3 = d3.select("#button3");
+        button3.on("click", function () {
+            callVLC("button3", {})
+        })
+        const button4 = d3.select("#button4");
+        button4.on("click", function () {
+            callVLC("button4", {})
         })
         // const panel = d3.select("#panel");
         // const panel1 = d3.select("#panel1");
