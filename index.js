@@ -123,28 +123,28 @@ app.post("/load", async (req, res) => {
         .then((file) => {
             vlc.stdin.write("clear\n");
             vlc.stdin.write('add ' + file['src'] + '\n')
-            var id_No = file['id']
-            var length = file['Length']
-            if (id_No < 8) {
+            len1 = file['Length']
+            ID = file['id']
+            if (ID < 8) {
                 setTimeout(() => {
                     vlc.stdin.write("clear\n");
                     vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/111.mp4' + '\n')
-                }, length)
-            } else if ((id_No > 7) & (id_No > 15)) {
+                }, len1)
+            } else if ((ID > 7) & (ID < 15)) {
                 setTimeout(() => {
                     vlc.stdin.write("clear\n");
                     vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4' + '\n')
-                }, length)
-            } else if ((id_No > 14) & (id_No < 22)) {
+                }, len1)
+            } else if ((ID > 14) & (ID < 22)) {
                 setTimeout(() => {
                     vlc.stdin.write("clear\n");
                     vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4' + '\n')
-                }, length)
-            } else if ((id_No > 21) & (id_No < 28)) {
+                }, len1)
+            } else if ((ID > 21) & (ID < 29)) {
                 setTimeout(() => {
                     vlc.stdin.write("clear\n");
                     vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4' + '\n')
-                }, length)
+                }, len1)
             }
             res.send({ status: "OK" })
         })
