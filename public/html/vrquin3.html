@@ -51,6 +51,12 @@
             <button id="yellow_button3" class="box brown" data-src="BeoPlayH6fromDimensiva.43.html"></button>
             <button id="white_button3" class="box silver" data-src="BeoPlayH6fromDimensivaXR.45.html"></button>
         </div>
+        <a href="/vrquin2">
+            <div id="button2" class="next"><i class='fa fa-chevron-left'></i></div>
+        </a>
+        <a href="/vrquin4">
+            <div id="button4" class="next"><i class='fa fa-chevron-right'></i></div>
+        </a>
     </div>
 
     <div class="aside">
@@ -316,6 +322,14 @@
         const white_button3 = d3.select("#white_button3");
         white_button3.on("click", function () {
             callVLC("white_button3", {})
+        })
+        const button4 = d3.select("#button4");
+        button4.on("click", function () {
+            callVLC("button4", {})
+        })
+        const button2 = d3.select("#button2");
+        button2.on("click", function () {
+            callVLC("button2", {})
         })
         // const panel = d3.select("#panel");
         // const panel1 = d3.select("#panel1");
