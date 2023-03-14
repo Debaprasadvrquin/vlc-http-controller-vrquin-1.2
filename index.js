@@ -14,7 +14,7 @@ var bri = 5;
 var vlc;
 const temperatures = [];
 
-const introduction = "/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4"
+const introduction = "/home/pi/vlc-http-controller-vrquin-1.2/videos/111.mp4"
 /* LISTENING PARAMETERS */
 // const length = fs.readdirSync("/videos").length
 vlc = spawn('vlc', ['-I', 'rc', '--rc-fake-tty']);
@@ -128,22 +128,22 @@ app.post("/load", async (req, res) => {
             if (id_No < 8) {
                 setTimeout(() => {
                     vlc.stdin.write("clear\n");
-                    vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+                    vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/111.mp4' + '\n')
                 }, length)
             } else if ((id_No > 7) & (id_No > 15)) {
                 setTimeout(() => {
                     vlc.stdin.write("clear\n");
-                    vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+                    vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4' + '\n')
                 }, length)
             } else if ((id_No > 14) & (id_No < 22)) {
                 setTimeout(() => {
                     vlc.stdin.write("clear\n");
-                    vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+                    vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4' + '\n')
                 }, length)
             } else if ((id_No > 21) & (id_No < 28)) {
                 setTimeout(() => {
                     vlc.stdin.write("clear\n");
-                    vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+                    vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4' + '\n')
                 }, length)
             }
             res.send({ status: "OK" })
@@ -155,113 +155,134 @@ vlc.stdin.write("loop\n")
 
 app.post("/black_button1", (req, res) => {
     vlc.stdin.write("clear\n");
-    vlc.stdin.write('add ' + "/home/pi//vlc-http-controller-vrquin-1.2/public/116.mp4" + '\n')
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4" + '\n')
     setTimeout(() => {
         vlc.stdin.write("clear\n");
-        vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/111.mp4' + '\n')
     }, 19000)
     res.send({ status: "OK" })
 });
 app.post("/yellow_button1", (req, res) => {
     vlc.stdin.write("clear\n");
-    vlc.stdin.write('add ' + "/home/pi//vlc-http-controller-vrquin-1.2/public/113.mp4" + '\n')
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4" + '\n')
     setTimeout(() => {
         vlc.stdin.write("clear\n");
-        vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/111.mp4' + '\n')
     }, 33000)
     res.send({ status: "OK" })
 });
 app.post("/white_button1", (req, res) => {
     vlc.stdin.write("clear\n");
-    vlc.stdin.write('add ' + "/home/pi//vlc-http-controller-vrquin-1.2/public/115.mp4" + '\n')
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4" + '\n')
     setTimeout(() => {
         vlc.stdin.write("clear\n");
-        vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/111.mp4' + '\n')
     }, 29000)
     res.send({ status: "OK" })
 });
 
 app.post("/black_button2", (req, res) => {
     vlc.stdin.write("clear\n");
-    vlc.stdin.write('add ' + "/home/pi//vlc-http-controller-vrquin-1.2/public/116.mp4" + '\n')
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4" + '\n')
     setTimeout(() => {
         vlc.stdin.write("clear\n");
-        vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4' + '\n')
     }, 19000)
     res.send({ status: "OK" })
 });
 app.post("/yellow_button2", (req, res) => {
     vlc.stdin.write("clear\n");
-    vlc.stdin.write('add ' + "/home/pi//vlc-http-controller-vrquin-1.2/public/113.mp4" + '\n')
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4" + '\n')
     setTimeout(() => {
         vlc.stdin.write("clear\n");
-        vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4' + '\n')
     }, 33000)
     res.send({ status: "OK" })
 });
 app.post("/white_button2", (req, res) => {
     vlc.stdin.write("clear\n");
-    vlc.stdin.write('add ' + "/home/pi//vlc-http-controller-vrquin-1.2/public/115.mp4" + '\n')
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4" + '\n')
     setTimeout(() => {
         vlc.stdin.write("clear\n");
-        vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4' + '\n')
     }, 29000)
     res.send({ status: "OK" })
 });
 
 app.post("/black_button3", (req, res) => {
     vlc.stdin.write("clear\n");
-    vlc.stdin.write('add ' + "/home/pi//vlc-http-controller-vrquin-1.2/public/116.mp4" + '\n')
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4" + '\n')
     setTimeout(() => {
         vlc.stdin.write("clear\n");
-        vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4' + '\n')
     }, 19000)
     res.send({ status: "OK" })
 });
 app.post("/yellow_button3", (req, res) => {
     vlc.stdin.write("clear\n");
-    vlc.stdin.write('add ' + "/home/pi//vlc-http-controller-vrquin-1.2/public/113.mp4" + '\n')
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4" + '\n')
     setTimeout(() => {
         vlc.stdin.write("clear\n");
-        vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4' + '\n')
     }, 33000)
     res.send({ status: "OK" })
 });
 app.post("/white_button3", (req, res) => {
     vlc.stdin.write("clear\n");
-    vlc.stdin.write('add ' + "/home/pi//vlc-http-controller-vrquin-1.2/public/115.mp4" + '\n')
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4" + '\n')
     setTimeout(() => {
         vlc.stdin.write("clear\n");
-        vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4' + '\n')
     }, 29000)
     res.send({ status: "OK" })
 });
 
 app.post("/black_button4", (req, res) => {
     vlc.stdin.write("clear\n");
-    vlc.stdin.write('add ' + "/home/pi//vlc-http-controller-vrquin-1.2/public/116.mp4" + '\n')
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4" + '\n')
     setTimeout(() => {
         vlc.stdin.write("clear\n");
-        vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4' + '\n')
     }, 19000)
     res.send({ status: "OK" })
 });
 app.post("/yellow_button4", (req, res) => {
     vlc.stdin.write("clear\n");
-    vlc.stdin.write('add ' + "/home/pi//vlc-http-controller-vrquin-1.2/public/113.mp4" + '\n')
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4" + '\n')
     setTimeout(() => {
         vlc.stdin.write("clear\n");
-        vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4' + '\n')
     }, 33000)
     res.send({ status: "OK" })
 });
 app.post("/white_button4", (req, res) => {
     vlc.stdin.write("clear\n");
-    vlc.stdin.write('add ' + "/home/pi//vlc-http-controller-vrquin-1.2/public/115.mp4" + '\n')
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4" + '\n')
     setTimeout(() => {
         vlc.stdin.write("clear\n");
-        vlc.stdin.write('add ' + '/home/pi//vlc-http-controller-vrquin-1.2/public/111.mp4' + '\n')
+        vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4' + '\n')
     }, 29000)
+    res.send({ status: "OK" })
+});
+
+app.post("/button1", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/111.mp4" + '\n')
+    res.send({ status: "OK" })
+});
+app.post("/button2", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4" + '\n')
+    res.send({ status: "OK" })
+});
+app.post("/button3", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4" + '\n')
+    res.send({ status: "OK" })
+});
+app.post("/button4", (req, res) => {
+    vlc.stdin.write("clear\n");
+    vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4" + '\n')
     res.send({ status: "OK" })
 });
 
@@ -279,7 +300,7 @@ app.post("/brip", (req, res) => {
         bri = 10;
     } else {
         if (bri == 1) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_1.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_1.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -287,7 +308,7 @@ app.post("/brip", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 2) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_2.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_2.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -295,7 +316,7 @@ app.post("/brip", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 3) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_3.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_3.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -303,7 +324,7 @@ app.post("/brip", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 4) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_4.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_4.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -311,7 +332,7 @@ app.post("/brip", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 5) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_5.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_5.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -319,7 +340,7 @@ app.post("/brip", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 6) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_6.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_6.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -327,7 +348,7 @@ app.post("/brip", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 7) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_7.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_7.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -335,7 +356,7 @@ app.post("/brip", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 8) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_8.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_8.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -343,7 +364,7 @@ app.post("/brip", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 9) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_9.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_9.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -351,7 +372,7 @@ app.post("/brip", (req, res) => {
                 console.log(temperatures);
             });
         } else {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_10.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_10.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -368,7 +389,7 @@ app.post("/brim", (req, res) => {
         bri = 1;
     } else {
         if (bri == 1) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_0.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_0.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -376,7 +397,7 @@ app.post("/brim", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 2) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_1.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_1.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -384,7 +405,7 @@ app.post("/brim", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 3) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_2.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_2.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -392,7 +413,7 @@ app.post("/brim", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 4) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_3.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_3.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -400,7 +421,7 @@ app.post("/brim", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 5) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_4.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_4.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -408,7 +429,7 @@ app.post("/brim", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 6) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_5.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_5.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -416,7 +437,7 @@ app.post("/brim", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 7) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_6.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_6.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -424,7 +445,7 @@ app.post("/brim", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 8) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_7.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_7.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -432,7 +453,7 @@ app.post("/brim", (req, res) => {
                 console.log(temperatures);
             });
         } else if (bri == 9) {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_8.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_8.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
@@ -440,7 +461,7 @@ app.post("/brim", (req, res) => {
                 console.log(temperatures);
             });
         } else {
-            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.1/public/python/bright_9.py']);
+            sensor = spawn('python', ['/home/pi/vlc-http-controller-vrquin-1.2/public/python/bright_9.py']);
             sensor.stdout.on('data', function (data) {
 
                 // convert Buffer object to Float
