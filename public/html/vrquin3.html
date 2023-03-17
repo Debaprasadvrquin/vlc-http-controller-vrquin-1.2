@@ -47,16 +47,16 @@
         <img src="/images/vrquin-64.png" alt="" class="my-logo">
         <div class="loadiframe">
             <h3>Available Colours</h3>
-            <button id="black_button3" class="box black" data-src="BeoPlayH6fromDimensivaXR.46.html"></button>
-            <button id="yellow_button3" class="box brown" data-src="BeoPlayH6fromDimensiva.43.html"></button>
-            <button id="white_button3" class="box silver" data-src="BeoPlayH6fromDimensivaXR.45.html"></button>
+            <button id="black_button2" class="box black" data-src="BeoPlayH6fromDimensivaXR.46.html"></button>
+            <button id="yellow_button2" class="box brown" data-src="BeoPlayH6fromDimensiva.43.html"></button>
+            <button id="white_button2" class="box silver" data-src="BeoPlayH6fromDimensivaXR.45.html"></button>
         </div>
         <!-- <div>
-            <a href="/vrquin2" style="text-decoration:none">
-                <div id="button2" class="next"><i class='fa fa-chevron-left'></i></div>
+            <a href="/vrquin1" style="text-decoration:none">
+                <div id="button1" class="next"><i class='fa fa-chevron-left'></i></div>
             </a>
-            <a href="/vrquin4" style="text-decoration:none">
-                <div id="button4" class="next"><i class='fa fa-chevron-right'></i></div>
+            <a href="/vrquin3" style="text-decoration:none">
+                <div id="button3" class="next"><i class='fa fa-chevron-right'></i></div>
             </a>
         </div> -->
     </div>
@@ -89,11 +89,11 @@
                     </p>
                 </div>
                 <div class="next_div">
-                    <a href="/vrquin2" style="text-decoration:none" class="pri">
-                        <div id="button2" class="next"><i class='fa fa-chevron-left'></i></div>
+                    <a href="/vrquin1" style="text-decoration:none" class="pri">
+                        <div id="button1" class="next"><i class='fa fa-chevron-left'></i></div>
                     </a>
-                    <a href="/vrquin4" style="text-decoration:none" class="nex">
-                        <div id="button4" class="next"><i class='fa fa-chevron-right'></i></div>
+                    <a href="/vrquin3" style="text-decoration:none" class="nex">
+                        <div id="button3" class="next"><i class='fa fa-chevron-right'></i></div>
                     </a>
                 </div>
                 <div class="prd-info">
@@ -264,7 +264,7 @@
             }
         }
 
-        d3.json("/library3", {
+        d3.json("/library2", {
             method: "GET"
         }).then(function (data) {
             const files = data.media;
@@ -319,27 +319,27 @@
                 }
             })
         }
-        const black_button3 = d3.select("#black_button3");
-        black_button3.on("click", function () {
-            callVLC("black_button3", {})
+        const black_button2 = d3.select("#black_button2");
+        black_button2.on("click", function () {
+            callVLC("black_button2", {})
         })
 
-        const yellow_button3 = d3.select("#yellow_button3");
-        yellow_button3.on("click", function () {
-            callVLC("yellow_button3", {})
+        const yellow_button2 = d3.select("#yellow_button2");
+        yellow_button2.on("click", function () {
+            callVLC("yellow_button2", {})
         })
 
-        const white_button3 = d3.select("#white_button3");
-        white_button3.on("click", function () {
-            callVLC("white_button3", {})
+        const white_button2 = d3.select("#white_button2");
+        white_button2.on("click", function () {
+            callVLC("white_button2", {})
         })
-        const button4 = d3.select("#button4");
-        button4.on("click", function () {
-            callVLC("button4", {})
+        const button3 = d3.select("#button3");
+        button3.on("click", function () {
+            callVLC("button3", {})
         })
-        const button2 = d3.select("#button2");
-        button2.on("click", function () {
-            callVLC("button2", {})
+        const button1 = d3.select("#button1");
+        button1.on("click", function () {
+            callVLC("button1", {})
         })
         // const panel = d3.select("#panel");
         // const panel1 = d3.select("#panel1");
