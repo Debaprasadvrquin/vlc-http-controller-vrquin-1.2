@@ -159,7 +159,8 @@ vlc.stdin.write("loop\n")
 app.post("/black_button1", (req, res) => {
     vlc.stdin.write("clear\n");
     vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4" + '\n')
-    setTimeout(() => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
         vlc.stdin.write("clear\n");
         vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/111.mp4' + '\n')
     }, 19000)
@@ -168,7 +169,8 @@ app.post("/black_button1", (req, res) => {
 app.post("/yellow_button1", (req, res) => {
     vlc.stdin.write("clear\n");
     vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4" + '\n')
-    setTimeout(() => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
         vlc.stdin.write("clear\n");
         vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/111.mp4' + '\n')
     }, 33000)
@@ -177,7 +179,8 @@ app.post("/yellow_button1", (req, res) => {
 app.post("/white_button1", (req, res) => {
     vlc.stdin.write("clear\n");
     vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4" + '\n')
-    setTimeout(() => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
         vlc.stdin.write("clear\n");
         vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/111.mp4' + '\n')
     }, 29000)
@@ -187,7 +190,8 @@ app.post("/white_button1", (req, res) => {
 app.post("/black_button2", (req, res) => {
     vlc.stdin.write("clear\n");
     vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4" + '\n')
-    setTimeout(() => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
         vlc.stdin.write("clear\n");
         vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4' + '\n')
     }, 19000)
@@ -196,7 +200,8 @@ app.post("/black_button2", (req, res) => {
 app.post("/yellow_button2", (req, res) => {
     vlc.stdin.write("clear\n");
     vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4" + '\n')
-    setTimeout(() => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
         vlc.stdin.write("clear\n");
         vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4' + '\n')
     }, 33000)
@@ -205,7 +210,8 @@ app.post("/yellow_button2", (req, res) => {
 app.post("/white_button2", (req, res) => {
     vlc.stdin.write("clear\n");
     vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4" + '\n')
-    setTimeout(() => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
         vlc.stdin.write("clear\n");
         vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4' + '\n')
     }, 29000)
@@ -215,7 +221,8 @@ app.post("/white_button2", (req, res) => {
 app.post("/black_button3", (req, res) => {
     vlc.stdin.write("clear\n");
     vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4" + '\n')
-    setTimeout(() => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
         vlc.stdin.write("clear\n");
         vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4' + '\n')
     }, 19000)
@@ -224,7 +231,8 @@ app.post("/black_button3", (req, res) => {
 app.post("/yellow_button3", (req, res) => {
     vlc.stdin.write("clear\n");
     vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4" + '\n')
-    setTimeout(() => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
         vlc.stdin.write("clear\n");
         vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4' + '\n')
     }, 33000)
@@ -233,7 +241,8 @@ app.post("/yellow_button3", (req, res) => {
 app.post("/white_button3", (req, res) => {
     vlc.stdin.write("clear\n");
     vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4" + '\n')
-    setTimeout(() => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
         vlc.stdin.write("clear\n");
         vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4' + '\n')
     }, 29000)
@@ -243,7 +252,8 @@ app.post("/white_button3", (req, res) => {
 app.post("/black_button4", (req, res) => {
     vlc.stdin.write("clear\n");
     vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4" + '\n')
-    setTimeout(() => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
         vlc.stdin.write("clear\n");
         vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4' + '\n')
     }, 19000)
@@ -252,7 +262,8 @@ app.post("/black_button4", (req, res) => {
 app.post("/yellow_button4", (req, res) => {
     vlc.stdin.write("clear\n");
     vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/113.mp4" + '\n')
-    setTimeout(() => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
         vlc.stdin.write("clear\n");
         vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4' + '\n')
     }, 33000)
@@ -261,7 +272,8 @@ app.post("/yellow_button4", (req, res) => {
 app.post("/white_button4", (req, res) => {
     vlc.stdin.write("clear\n");
     vlc.stdin.write('add ' + "/home/pi/vlc-http-controller-vrquin-1.2/videos/115.mp4" + '\n')
-    setTimeout(() => {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => {
         vlc.stdin.write("clear\n");
         vlc.stdin.write('add ' + '/home/pi/vlc-http-controller-vrquin-1.2/videos/116.mp4' + '\n')
     }, 29000)
